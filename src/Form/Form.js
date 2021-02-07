@@ -37,7 +37,7 @@ class Form extends Component{
         return(
             <div className="Form"> 
                 <form onSubmit={this.mySubmitHandler}>
-                <label /* className="font-effect-emboss" */> First Name
+                <label /* className="font-effect-emboss" */> FIRST Name
                 <input type="text"  name="fname" value={this.state.fname} 
                                     onChange={this.handleChange}/></label>
                 <label> Last Name 
