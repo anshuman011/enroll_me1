@@ -1,0 +1,58 @@
+.Toolbar{
+    margin:auto;
+    margin-bottom: 100px;
+    background-color: #FFFFFF;
+    box-shadow:0px 1px 100px /* #bfd5e7a2 */#7da2be73;
+    /* border:1px solid rgb(185, 85, 85); */
+    height: 65px;
+    font-family :Montserrat, sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    /* margin-left: -2.3%; */
+    box-sizing: border-box;
+    width:99%;
+    justify-content: flex-end;
+    height: auto;
+
+    overflow: auto;
+    
+}
+
+.Toolbar img{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+}
+ 
+.Toolbar ul{list-style-type:none;float:right;margin-top: 5px;margin-right:10px;}
+.Toolbar ul li{display: inline-block;margin-right:10px;}
+
+/* form */
+  
+  .Toolbar input[type=text] {
+    padding: 6px;
+    margin-top: 10px;
+    font-size: 15px;
+    border: none;
+    opacity: 0.2;
+    background-color: #bad5ee;
+  }
+  
+  .Toolbar  button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .Toolbar button:hover {
+    background: #000;
+  }
+  
+  /* @media(max-width:500px){
+      form{
+          display: none;
+      }
+  } */

@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+  height:100vh;
+  background-color: #F9FBFD;
+  display: flex;
+  justify-content: flex-start;
+  /* align-content: flex-end; */
+  flex-wrap: wrap;
+  /* justify-content:space-between; */
+  /* align-items: flex-start; */
+  /* align-content: flex-end; */
+
+  box-sizing: border-box;
+}
+
+// .App::after {
+//   content: "";
+//   clear: both;
+//   display: block;
+// }
+
+// .a{
+// float: left;
+// width:20%;
+// // background-color: blue;
+// }
+
+// .b{
+// float: left;
+// width: 80%;
+// // background-color: brown;
+// }
+
+// @media only screen and (max-width: 900px) {
+//   .a{
+//     width: 18%;
+//   }
+//   .b{
+//     width: 82vw;
+//   }
+// }
+
+// @media only screen and (max-width: 600px) {
+//   .a{
+//     width: 15vw;
+//   }
+//   .b{
+//     width: 85vw;
+//   }
+// }

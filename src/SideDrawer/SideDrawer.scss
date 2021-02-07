@@ -1,0 +1,84 @@
+.SideDrawer{
+    background-color: #002b49ce;
+    // opacity:0.3;
+    color:rgb(255, 255, 255);
+    position: fixed;
+    width: 230px;
+    // font-size: 50%;
+    // width:20%;
+    // float: left;
+    
+    height: 110%;
+     left: 0;
+    top: 0; 
+    z-index: 200;
+    // margin-top:-25px;
+    transition:transform 0.2s 0s ease-in-out;
+}
+
+.SideDrawer{
+    ul{list-style-type: none;
+        // float:left;
+        margin-left: 10%;
+        margin-top: 15px;
+        padding: 0;
+      
+        display:flex;
+        flex-flow: column ;
+        align-items:flex-start; 
+        justify-content: space-around;}
+    
+        li{
+        margin-bottom: 15px;
+        float:left;
+        font-size: 13px;
+    }
+}
+.SideDrawer:hover{
+    transform: translateX(0%);
+}
+
+.Open{
+    transform: translateX(0%);
+}
+.Close{
+    transform: translateX(-80%);  
+}
+
+.Close a{
+    display: none;
+}
+
+.Close:hover{ 
+    .Hover{
+    list-style-type: none;
+        // float:left;
+        margin-left: 10%;
+        margin-top: 15px;
+        padding: 0;
+      
+        display:flex;
+        flex-flow: column ;
+        align-items:flex-start; 
+        justify-content: space-around;}
+    
+        li{
+        margin-bottom: 15px;
+        float:left;
+        font-size: 13px;
+    } 
+}
+
+// @media only screen and (max-width: 900px) {
+//     .SideDrawer{
+//         width: 180px;
+        
+//     } 
+//     }
+//     @media only screen and (max-width: 600px) {
+//         .SideDrawer{
+//             width: 150px;
+            
+//         } 
+//         }
+      

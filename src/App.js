@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import './App.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// import AddUserForm from './AddUserForm/AddUserForm';
+import SideDrawer from "./SideDrawer/SideDrawer";
+import Layout from './Layout/Layout';
+
+
+class App extends Component {
+
+  state={showSideDrawer:false}
+  showSideDrawerHandler=()=>{
+    this.setState(prevState=>{return {showSideDrawer:!prevState.showSideDrawer}})
+  }
+  
+  render() {
+    let things=(
+      <div className="App">
+        <div style={{flex:"3.6%"}}>
+      <SideDrawer showSideDrawer={this.state.showSideDrawer}/></div>
+      <div style={{flex:"96.4%"}}>
+      <Layout showSideDrawerHH={this.showSideDrawerHandler}/></div>
+      </div>
+      )
+    if(this.state.showSideDrawer){
+      things=(
+        <div className="App">
+          <div /* className="a" */style={{flex:"20%"}}>
+        <SideDrawer showSideDrawer={this.state.showSideDrawer}/></div>
+        <div /* className="b" */style={{flex:"92%"}}>
+        <Layout showSideDrawerHH={this.showSideDrawerHandler}/></div>
+        </div>
+        )
+    }
+
+    return (
+      <div> 
+      {things}
+      {/* <AddUserForm/>    */}
+      </div>
+    );
+  }
 }
 
 export default App;
+
