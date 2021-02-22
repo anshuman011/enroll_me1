@@ -12,7 +12,8 @@ class App extends Component {
   showSideDrawerHandler=()=>{
     this.setState(prevState=>{return {showSideDrawer:!prevState.showSideDrawer}})
   }
-  
+  changeBackground=()=>{document.getElementById("bgColor").style.backgroundColor="black"}
+
   render() {
     let things=(
       <div className="App">
@@ -32,9 +33,11 @@ class App extends Component {
         </div>
         )
     }
+    
 
     return (
-      <div> 
+      <div id="bgColor"> 
+        <button onClick={this.changeBackground}>DarkModeToggle</button>
       {things}
       {/* <AddUserForm/>    */}
       </div>
